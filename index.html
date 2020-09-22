@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Covid Tracker App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="index.css" />
+  </head>
+  <body class="text-center">
+    <main>
+      <div class="container">
+        <div id="global">Global</div>
+        <div id="data">
+          <div id="confirmed-data">
+            Confirmed:
+            <span id="confirmed-cases">----</span>
+          </div>
+          <div id="recovered-data">
+            Recovered:
+            <span id="recovered-cases">----</span>
+          </div>
+          <div id="deaths-data">
+            Deaths:
+            <span id="deaths-cases">----</span>
+          </div>
+        </div>
+      </div>
+      <h1 class="banner p-3">Country</h1>
+
+      <div class="form-group">
+        <input
+          id="country-input"
+          class="form-control form-control-lg"
+          type="text"
+          placeholder="Search country"
+        />
+      </div>
+      <button
+        type="button"
+        onclick="searchCountry()"
+        class="btn btn-lg btn-dark"
+      >
+        Search
+      </button>
+      <div id="weather-output" class="mt-3">
+        <div class="card-deck mb-3 text-center">
+          <div class="card mb-4 shadow-sm">
+            <div class="card-header">
+              <h4 id="country-name" class="my-0 font-weight-normal">----</h4>
+            </div>
+            <div class="card-body">
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>Confirmed: <span id="confirmed">--</span></li>
+                <li>Recovered: <span id="recovered">--</span></li>
+                <li>Deaths: <span id="deaths">--</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <h3>Website Made By Saurav Kuthiala</h3>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

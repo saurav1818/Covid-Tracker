@@ -1,0 +1,30 @@
+#country-input, #weather-output {
+    max-width: 400px;
+    margin: 0 auto;
+}
+  
+.banner {
+    color: #FFD23F;
+    font-family: sans-serif;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+}
+
+#global {
+    margin-bottom: 16px;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+#data {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#confirmed-data, #recovered-data, #deaths-data {
+    font-size: 24px;
+    font-weight: 500;
+}
